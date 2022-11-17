@@ -42,7 +42,7 @@ const MenuItems = ({ items }) => {
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown((prev) => !prev)}
           >
-            {items.title}{" "}
+            {items.title}
           </button>
           <Dropdown submenus={items.submenu} dropdown={dropdown} />
         </>
