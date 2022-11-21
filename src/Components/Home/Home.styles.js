@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  height: calc(100vh - 130px);
+  height: calc(100vh - 60px);
   width: 100%;
   color: black;
   background-color: #f0f8ff;

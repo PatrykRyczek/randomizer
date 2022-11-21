@@ -1,7 +1,8 @@
 import React from "react";
+import DicerollerBody from "../Components/Submenu/Games/Diceroller.body";
 
 function Dice() {
-  return <div>Dice</div>;
+  return <DicerollerBody />;
 }
 
 export default Dice;
