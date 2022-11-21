@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  font-size: 26px;
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -14,5 +15,9 @@ export const Container = styled.div`
   button {
     line-height: 30px;
     width: 200px;
+  }
+
+  span {
+    margin: 15px 0;
   }
 `;

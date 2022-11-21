@@ -16,14 +16,14 @@ function HomeBody() {
     return Math.floor(Math.random() * (+max - +min)) + +min;
   }
 
-  (function loop() {
-    var rand = Math.round(Math.random() * (3000 - 500)) + 500;
-    setTimeout(function () {
-      getRand();
-      loop();
-      document.getElementById("cont").innerHTML = getRand();
-    }, rand);
-  })();
+  // (function loop() {
+  //   var rand = Math.round(Math.random() * (3000 - 500)) + 500;
+  //   setTimeout(function () {
+  //     getRand();
+  //     loop();
+  //     document.getElementById("cont").innerHTML = getRand();
+  //   }, rand);
+  // })();
 
   return (
     <Container>

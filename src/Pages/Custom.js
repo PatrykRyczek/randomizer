@@ -1,7 +1,7 @@
 import React from "react";
-
+import CustomBody from "../Components/Submenu/Numbers/Custom.body";
 function Custom() {
-  return <div>Custom</div>;
+  return <CustomBody />;
 }
 
 export default Custom;

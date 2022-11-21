@@ -1,7 +1,7 @@
 import React from "react";
-
+import IntegersBody from "../Components/Submenu/Numbers/Integers.body";
 function Int() {
-  return <div>Int</div>;
+  return <IntegersBody />;
 }
 
 export default Int;

@@ -1,6 +1,6 @@
 export const menuItems = [
   {
-    title: "Data",
+    title: "Personal Data",
     url: "/data",
     submenu: [
       {
@@ -8,7 +8,7 @@ export const menuItems = [
         url: "pesel",
       },
       {
-        title: "Date of birth",
+        title: "Birthday",
         url: "birth",
       },
       {

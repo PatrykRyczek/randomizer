@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
 import { Container } from "../Styles";
+
 function PeselBody() {
   const [pesel, setPesel] = useState({ pesel: 0 });
   const [db, setDb] = useState({ day: 0, month: 0, year: 0 });
@@ -66,7 +66,7 @@ function PeselBody() {
       last2Digits(peselMonth) +
       last2Digits(birthDay) +
       fourRandomDigits;
-    console.log(peselMonth);
+
     var controlDigit = computePeselControlDigit(rawPesel);
     setPesel(rawPesel + controlDigit);
     setDb({ day: birthDay, month: birthMonth, year: birthYear });
@@ -77,7 +77,6 @@ function PeselBody() {
     <Container>
       <h1>Random pesel generator</h1>
       <button onClick={generatePesel}>GENERATE</button>
-      <p>Press button to generate pesel</p>
       <span>{isNaN(pesel) ? "" : "Your random pesel: " + pesel}</span>
       <span>
         Date of birth: {db.day < 10 ? "0" + db.day : db.day}.

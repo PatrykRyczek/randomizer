@@ -1,7 +1,7 @@
 import React from "react";
-
+import DecimalsBody from "../Components/Submenu/Numbers/Decimals.body";
 function Dec() {
-  return <div>Dec</div>;
+  return <DecimalsBody />;
 }
 
 export default Dec;
