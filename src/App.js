@@ -11,7 +11,7 @@ import Dec from "./Pages/Dec";
 import Custom from "./Pages/Custom";
 import Coin from "./Pages/Coin";
 import Dice from "./Pages/Dice";
-
+import Drink from "./Pages/Drink";
 function App() {
   return (
     <div className="App">
@@ -27,6 +27,7 @@ function App() {
           <Route path="/custom" element={<Custom />} />
           <Route path="/coin" element={<Coin />} />
           <Route path="/dice" element={<Dice />} />
+          <Route path="/drink" element={<Drink />} />
         </Routes>
         <Footer />
       </Router>

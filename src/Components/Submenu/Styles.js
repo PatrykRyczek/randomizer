@@ -25,4 +25,9 @@ export const Container = styled.div`
   select {
     margin-top: 25px;
   }
+  .instructions {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+  }
 `;

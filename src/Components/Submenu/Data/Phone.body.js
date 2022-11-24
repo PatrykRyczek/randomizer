@@ -46,9 +46,9 @@ function PhoneBody() {
           </option>
         ))}
       </select>
-      <button onClick={getNumber2}>Press me to generate</button>
+      <button onClick={getNumber2}>GENERATE</button>
       <span>
-        Your phone number: {select} {nr}
+        Your phone number: {select != "Select country" ? select : ""} {nr}
       </span>
     </Container>
   );

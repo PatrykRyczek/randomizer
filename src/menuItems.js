@@ -47,6 +47,10 @@ export const menuItems = [
         title: "Dice Roller",
         url: "dice",
       },
+      {
+        title: "Drink",
+        url: "drink",
+      },
     ],
   },
 ];
