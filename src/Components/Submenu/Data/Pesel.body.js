@@ -77,12 +77,17 @@ function PeselBody() {
     <Container>
       <h1>Random pesel generator</h1>
       <button onClick={generatePesel}>GENERATE</button>
-      <span>{isNaN(pesel) ? "" : "Your random pesel: " + pesel}</span>
       <span>
-        Date of birth: {db.day < 10 ? "0" + db.day : db.day}.
-        {db.month < 10 ? "0" + db.month : db.month}.{db.year}
+        {isNaN(pesel)
+          ? "Press button to display random pesel"
+          : "Your random pesel: " + pesel}
       </span>
-      <span>Sex: {last % 2 ? "Men" : "Women"}</span>
+      <span>
+        Date of birth: {isNaN(pesel) ? "" : db.day + "."}
+        {isNaN(pesel) ? "" : db.month + "."}
+        {isNaN(pesel) ? "" : db.year}
+      </span>
+      <span>Sex: {isNaN(pesel) ? "" : last % 2 ? "Men" : "Women"}</span>
     </Container>
   );
 }

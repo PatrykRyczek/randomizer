@@ -13,11 +13,16 @@ export const Container = styled.div`
   padding: 0 25px;
 
   button {
+    margin: 15px;
     line-height: 30px;
     width: 200px;
   }
 
   span {
     margin: 15px 0;
+  }
+  input,
+  select {
+    margin-top: 25px;
   }
 `;
