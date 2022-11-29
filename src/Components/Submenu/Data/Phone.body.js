@@ -4,7 +4,6 @@ import countrycodes from "../countrycodes.json";
 
 function PhoneBody() {
   const [select, setSelect] = useState();
-  const [length, setLenght] = useState([9]);
   const [nr, setNr] = useState();
 
   const dialcodes = countrycodes.map((countrycode) => ({
@@ -26,7 +25,6 @@ function PhoneBody() {
 
   function getNumber2() {
     let length = document.getElementById("inputLength").value;
-    setLenght(length);
     let select = document.getElementById("countries").value;
     setSelect(select);
     setNr(getNumber(length));

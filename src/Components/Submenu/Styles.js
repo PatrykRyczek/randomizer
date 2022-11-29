@@ -31,3 +31,24 @@ export const Container = styled.div`
     width: 60%;
   }
 `;
+
+export const Inputs = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  input {
+    margin: 0 10px;
+  }
+
+  input[type="number"]:focus {
+    border: 2px solid blue;
+    outline: 0;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+`;

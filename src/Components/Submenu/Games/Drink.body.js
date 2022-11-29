@@ -16,18 +16,9 @@ function DrinkBody() {
   };
   useEffect(() => {
     fetchData();
-  }, []); //fetch data on page load
-
-  //   useEffect(() => {
-  //     fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")
-  //       .then((results) => results.json())
-  //       .then((data) => {
-  //         setDrinks(data.drinks);
-  //       });
-  //   }, []);
+  }, []);
   return (
     <Container>
-      <p>What should I drink tonight?</p>
       {array.map((drink) => {
         const {
           idDrink,
@@ -35,13 +26,6 @@ function DrinkBody() {
           strCategory,
           strDrinkThumb,
           strInstructions,
-          strIngredient1,
-          strIngredient2,
-          strIngredient3,
-          strIngredient4,
-          strIngredient5,
-          strIngredient6,
-          strIngredient7,
         } = drink;
         return (
           <div key={idDrink}>
